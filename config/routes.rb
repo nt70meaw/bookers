@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 root :to => 'homes#top'
-resources :lists
+resources :books
+get 'books/:id/edit_custom', to: 'books#edit', as: 'edit_book_custom'
+get 'books/:id/back_custom', to: 'books#back', as: 'back_book_custom'
 
 end

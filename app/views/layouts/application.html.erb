@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>WebCampBacken</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+<title>WebCampBacken</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
 <body>
-    <h1>ようこそ <strong>Bookers</strong>  へ！</h1>
-<p><strong>Bookers</strong>では、さまざまな書籍に関するあなたの意見や</p><p>印象を共有し交換することができます</p>
-<p><a href="/books">start</a></p>	
-  </body>
-  <main>
-  <% flash.each do |message_type, message| %>
-    <div class="flash-message <%= message_type %>"><%= message %></div>
-  <% end %>
-    <%= yield %>
-     </main>
-  </body>
+<main>
+<% flash.each do |message_type, message| %>
+<div class="flash-message <%= message_type %>"><%= message %></div>
+<% end %>
+<%= yield %>
+</main>
+</body>
 </html>
-

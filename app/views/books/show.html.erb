@@ -4,9 +4,8 @@
 <h2>Body</h2>
 <p><%= @book.body %></p>
 
-<%= link_to "Edit", edit_book_path(@book.id) %>
+<%= link_to "Show", book_path(@book) %>
 
-<%= link_to "Back", back_book_path(@book.id) %>
+<%= link_to "Edit", edit_book_path(@book) %>
 
-<%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "Are you sure？" %>
-
+<%= link_to "Destroy", @book, method: :delete, data: { confirm: "Are you sure?" } %>
