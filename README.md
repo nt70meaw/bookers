@@ -1,6 +1,6 @@
 # README
 
-# DMM WEBCAMP 基礎知識学習フェーズver.2
+# DMM WEBCAMP 基礎知識学習フェーズver.2.0
  「課題：アプリケーションを作成してみよう：基礎編」  > Bookers（提出課題）
 
 ## 使い方
